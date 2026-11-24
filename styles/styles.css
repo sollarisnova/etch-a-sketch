@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    width: 560px;
+    flex-flow: row wrap;
+}
+
+.pixel {
+    height: 35px;
+    flex: 0 0 35px;
+}
