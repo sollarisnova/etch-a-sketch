@@ -10,5 +10,16 @@ for (let i = 1; i<= grid; i++){
     container.appendChild(unitOfGrid);
 }
 
+const allPixels = document.querySelectorAll('.pixel');
+const arrayAllPixels = Array.from(allPixels);
+
+arrayAllPixels.forEach((pixel) => {
+                                    pixel.addEventListener('mouseenter', () => pixel.classList.add('hover'))
+                                    pixel.addEventListener('mouseleave', () => pixel.classList.remove('hover'))
+                                });
+
+
+console.log(arrayAllPixels);
+
 
 
