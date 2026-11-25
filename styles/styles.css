@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    
+    background-color: #84B179;
 }
 
 #container {
@@ -9,6 +9,10 @@ body {
     width: 960px;
     flex-flow: row wrap;
     margin: 0px auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(245, 162, 176);
+    background-color: white;
 }
 
 .pixel {
@@ -24,6 +28,16 @@ body {
 
 #resetButton {
     display: block;
-    margin: 0px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: none;
+    filter: none;
+    border: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    background-color: pink;
+    margin: 20px auto;
+
     
 }
