@@ -1,0 +1,61 @@
+[33mcommit cc5561cb0787f68a0dcbfbf202fcd647f38c5119[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/opacity[m[33m, [m[1;32mopacity[m[33m)[m
+Author: miguel <novasollaris@gmail.com>
+Date:   Wed Nov 25 01:06:50 2026 -0400
+
+    Add the capacity for the pixel to get darker
+    
+    each time the mouse hover a pixel it gets more darker
+
+[33mcommit 4f6ef3d021b8e0edd6126df57754e2560a97699a[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: miguel <novasollaris@gmail.com>
+Date:   Tue Nov 24 20:15:25 2026 -0400
+
+    Add the function to ask the user for a new grid
+    
+    removing the old divs and calculating a new grid
+
+[33mcommit 85b4eed29e554c0af7b112bf75d398032e43cbee[m
+Author: miguel <novasollaris@gmail.com>
+Date:   Mon Nov 23 22:49:40 2026 -0400
+
+    Add the logic to change color of the div pixels
+    
+    adding and removing the class hover using eventlisteners
+
+[33mcommit 3f8c393fe955b817998f11629a7aad75e85e1c61[m
+Author: miguel <novasollaris@gmail.com>
+Date:   Mon Nov 23 22:31:18 2026 -0400
+
+    Create the style to show the divs in a grid
+    
+    using css and flexbox to create the grids of divs
+
+[33mcommit 27b4bea2d83b5000a3891b5b2db20520c21c3ca9[m
+Author: miguel <novasollaris@gmail.com>
+Date:   Mon Nov 23 20:37:23 2026 -0400
+
+    Create a class .pixel for the divs
+    
+    this will assign the class pixel to each div created using js
+
+[33mcommit bda7acf001dbdbb7478eeb206d5420728d829d04[m
+Author: miguel <novasollaris@gmail.com>
+Date:   Mon Nov 23 20:32:12 2026 -0400
+
+    Add the logic to make a number of div
+    
+    this will make possible to let the user choose the size of the grid
+
+[33mcommit b1c9a08afc1dbb72735069ecd9930aa977b1ceb8[m
+Author: miguel <novasollaris@gmail.com>
+Date:   Mon Nov 23 20:15:36 2026 -0400
+
+    Create the structure of the page
+    
+    in this commit first is created the html boiler plate
+
+[33mcommit a9e7e18a689be9eb4c41cf56bf8d7974d2cb4f8c[m
+Author: sollarisnova <novasollaris@gmail.com>
+Date:   Mon Nov 23 20:13:03 2026 -0400
+
+    Initial commit
