@@ -1,25 +1,67 @@
-let grid = 256;
-
+let numberOfPixels;
+let totalOfPixels;
+let widthOfPixels;
 
 const container = document.querySelector('#container');
+const resetButton = document.querySelector('#resetButton');
 
-for (let i = 1; i<= grid; i++){
+
+
+resetButton.addEventListener('click', () => newGrid());
+
+
+createGrid();
+
+function createGrid (sizeOfGrid = 16) {
+    totalOfPixels = sizeOfGrid * sizeOfGrid;
+    for (let i = 1; i<= totalOfPixels; i++){
     const unitOfGrid = document.createElement('div');
     unitOfGrid.classList.add('pixel');
-    unitOfGrid.textContent = i;
+    addHoverClass(unitOfGrid);
+    calculateWidth(sizeOfGrid, unitOfGrid);
     container.appendChild(unitOfGrid);
+    }
 }
 
-const allPixels = document.querySelectorAll('.pixel');
-const arrayAllPixels = Array.from(allPixels);
+//create a newgrid using the user prompt and erasing all the previous divs
+function newGrid () {
+    
+    container.replaceChildren();
+    numberOfPixels = prompt('enter the number of pixels per side', 'no more than 100');
 
-arrayAllPixels.forEach((pixel) => {
-                                    pixel.addEventListener('mouseenter', () => pixel.classList.add('hover'))
-                                    pixel.addEventListener('mouseleave', () => pixel.classList.remove('hover'))
-                                });
+    if (numberOfPixels <= 100){
+        createGrid(numberOfPixels);
+    }
+
+    else {
+        alert('no more than 100 pixels');
+        newGrid();
+    }
+    
+
+}
 
 
-console.log(arrayAllPixels);
+//this function add an event listener to the pixel
+function addHoverClass (pixel) {
+    pixel.addEventListener('mouseenter', () => pixel.classList.add('hover'))
+}
+
+//this function calculate the width of the pixel so it size it to a 960px canvas
+function calculateWidth (sizeOfGrid, unitOfGrid) {
+    widthOfPixels = 960 / sizeOfGrid;
+    unitOfGrid.style['width'] = `${widthOfPixels}px`
+    unitOfGrid.style['height'] = `${widthOfPixels}px`
+}
+
+
+
+
+
+
+
+
+
 
 
 

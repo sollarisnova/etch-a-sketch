@@ -1,21 +1,28 @@
 body {
     margin: 0px;
     padding: 0px;
-    display: flex;
-    justify-content: center;
+    
 }
 
 #container {
     display: flex;
-    width: 560px;
+    width: 960px;
     flex-flow: row wrap;
+    margin: 0px auto;
 }
 
 .pixel {
-    height: 35px;
-    flex: 0 0 35px;
+    height: 60px;
+    width: 60px;
+    flex: 0 0 auto;
 }
 
 .hover {
     background-color: pink;
+}
+
+#resetButton {
+    display: block;
+    margin: 0px auto;
+    
 }
