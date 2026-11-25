@@ -19,6 +19,7 @@ body {
 
 .hover {
     background-color: pink;
+    opacity: 0.1;
 }
 
 #resetButton {
